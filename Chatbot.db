@@ -1,0 +1,14 @@
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT UNIQUE,
+  password TEXT,
+  role TEXT
+);
+
+CREATE TABLE history (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER,
+  question TEXT,
+  answer TEXT,
+  created_at TEXT
+);
